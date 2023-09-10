@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import illustrattion from '../../assets/images/Illusttration.png'
 
 const Hero = () => {
   return (
-    <section id="howItWorks" className="max-container flex justify-between max-xl:flex-col">
+    <section id="hero" className="max-container flex justify-between max-xl:flex-col animate-flip-up animate-delay-400">
         <div className='self-start px-4'>
             <h1 className="text-8xl font-allerta max-md:text-4xl">
                 <span className='text-[#3A7CD9]'>Learn</span>
@@ -12,9 +13,9 @@ const Hero = () => {
                 each minute
             </h1>
             <p className='py-10 text-2xl'><span className='text-[#3A7CD9]'>|</span> Try yourself in a quiz!</p>
-            <button className='bg-gradient-to-r from-cyan-300 to-blue-500 font-monsterrat p-4 rounded-md text-white'>Start Solving</button>
+            <Link to='/questions '><button className='bg-gradient-to-r from-cyan-300 to-blue-500 font-monsterrat p-4 rounded-md text-white'>Start Solving</button></Link>
         </div>
-        <div className='flex justify-center animate-jump-in'>
+        <div className='flex justify-center'>
             <img src={illustrattion} alt="Illustrattion" width={800} height={600} />
         </div>
     </section>

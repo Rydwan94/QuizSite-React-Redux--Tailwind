@@ -5,41 +5,48 @@ import footerInstagram from '../assets/icons/footerIcon4.png'
 
 export const questions = [
     {
-    question: "Who is Better",
+    question: "Czy Monciu kocha?",
         anwsers: [
-            {anwser: "Me", isCorrect: false},
-            {anwser: "You", isCorrect: false},
-            {anwser: "Jezus", isCorrect: true},
-            {anwser: "Neighbour", isCorrect: true}
+            {anwser: "Tak",letter:"A", isCorrect: false},
+            {anwser: "Nad życie",letter:"B", isCorrect: true},
+            {anwser: "Nie",letter:"C", isCorrect: false},
+            {anwser: "Za brzydki jesteś",letter:"D", isCorrect: false}
         ]
     },
     {
-        question: "How many finger has monkey",
+        question: "Ile monciu chce mieć dzieci",
         anwsers: [
-            {anwser: 1, isCorrect: false},
-            {anwser: 2, isCorrect: false},
-            {anwser: 3, isCorrect: false},
-            {anwser: 4, isCorrect: true},           
+            {anwser: 1,letter:"A", isCorrect: false},
+            {anwser: 2,letter:"B", isCorrect: true},
+            {anwser: 3,letter:"C", isCorrect: false},
+            {anwser: 4,letter:"D", isCorrect: false},           
         ]
     },
     {
-        
-    }
+        question: "Czy mońć chce mnie poślubić",
+        anwsers: [
+            {anwser: "Może",letter:"A", isCorrect: false},
+            {anwser: "Tak",letter:"B", isCorrect: true},
+            {anwser: "Nie",letter:"C", isCorrect: false},
+            {anwser: "Nigdy",letter:"D", isCorrect: false},           
+        ]
+    },
+    
 ]
 
 
 export const NavBar = [
     {
-        path : '#howItWorks',
+        path : 'hero',
         label: "How it works"
     },
     {
-        path : '#features',
+        path : 'features',
         label: "Features"
     },
     {
-        path : '#About us',
-        label: "About us"
+        path : 'learn',
+        label: "How to learn"
     },
 ]
 

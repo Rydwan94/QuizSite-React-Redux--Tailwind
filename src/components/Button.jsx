@@ -1,16 +1,21 @@
 import { answer } from "../actions/actions";
 import { useDispatch } from "react-redux";
 
-const Button = ({ message }) => {
-
-  const dispatch = useDispatch()
+const Button = ({ index,message, letter }) => {
+  const dispatch = useDispatch();
 
   const handleAnswerClick = () => {
-    dispatch(answer())
-    
-  }
+    dispatch(answer(index));
+  };
 
-
-  return <button onClick={handleAnswerClick} className="mx-2 bg-black text-white rounded-md p-2">{message}</button>;
+  return (
+    <button
+      onClick={handleAnswerClick}
+      className=" relative bg-white text-black text-4xl max-md:text-2xl rounded-md py-2 w-full hover:transform hover:scale-105 transition-all "
+    >
+      <span className="font-monsterrat w absolute left-20 text-blue">{letter}</span>
+      <span >{message}</span>
+    </button>
+  );
 };
 export default Button;
