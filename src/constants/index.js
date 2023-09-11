@@ -5,34 +5,69 @@ import footerLinkedin from '../assets/icons/footerIcon3.png'
 
 export const questions = [
     {
-    question: "Czy Monciu kocha?",
-        anwsers: [
-            {anwser: "Tak",letter:"A", isCorrect: false},
-            {anwser: "Nad życie",letter:"B", isCorrect: true},
-            {anwser: "Nie",letter:"C", isCorrect: false},
-            {anwser: "Za brzydki jesteś",letter:"D", isCorrect: false}
+        question: "Co to jest galaktyka?",
+        answers: [
+            { answer: "Zbiór gwiazd, pyłów i gazów przestrzennych", letter: "A", isCorrect: true },
+            { answer: "Planeta w naszym Układzie Słonecznym", letter: "B", isCorrect: false },
+            { answer: "Księżyc", letter: "C", isCorrect: false },
+            { answer: "Kometa", letter: "D", isCorrect: false }
         ]
     },
     {
-        question: "Ile monciu chce mieć dzieci",
-        anwsers: [
-            {anwser: 1,letter:"A", isCorrect: false},
-            {anwser: 2,letter:"B", isCorrect: true},
-            {anwser: 3,letter:"C", isCorrect: false},
-            {anwser: 4,letter:"D", isCorrect: false},           
+        question: "Jaka jest najbliższa gwiazda Ziemi?",
+        answers: [
+            { answer: "Księżyc", letter: "A", isCorrect: false },
+            { answer: "Słońce", letter: "B", isCorrect: true },
+            { answer: "Mars", letter: "C", isCorrect: false },
+            { answer: "Wenus", letter: "D", isCorrect: false }
         ]
     },
     {
-        question: "Czy mońć chce mnie poślubić",
-        anwsers: [
-            {anwser: "Może",letter:"A", isCorrect: false},
-            {anwser: "Tak",letter:"B", isCorrect: true},
-            {anwser: "Nie",letter:"C", isCorrect: false},
-            {anwser: "Nigdy",letter:"D", isCorrect: false},           
+        question: "Co to jest czarna dziura?",
+        answers: [
+            { answer: "Nieskończenie mały punkt w kosmosie", letter: "A", isCorrect: true },
+            { answer: "Najjaśniejsza gwiazda na niebie", letter: "B", isCorrect: false },
+            { answer: "Skupisko pyłu i gazów", letter: "C", isCorrect: false },
+            { answer: "Planeta poza naszym Układem Słonecznym", letter: "D", isCorrect: false }
         ]
     },
-    
-]
+    {
+        question: "Która planeta jest znana z atmosfery bogatej w dwutlenek siarki i kwas siarkowy?",
+        answers: [
+            { answer: "Mars", letter: "A", isCorrect: false },
+            { answer: "Jowisz", letter: "B", isCorrect: false },
+            { answer: "Wenus", letter: "C", isCorrect: true },
+            { answer: "Saturn", letter: "D", isCorrect: false }
+        ]
+    },
+    {
+        question: "Co to jest pulsar?",
+        answers: [
+            { answer: "Mała planeta w Układzie Słonecznym", letter: "A", isCorrect: false },
+            { answer: "Rodzaj czarnej dziury", letter: "B", isCorrect: false },
+            { answer: "Rotujący neutronowy gwiazdokształtny obiekt emitujący promieniowanie elektromagnetyczne", letter: "C", isCorrect: true },
+            { answer: "Kosmiczny teleskop", letter: "D", isCorrect: false }
+        ]
+    },
+    {
+        question: "Jaka planeta jest największa w naszym Układzie Słonecznym?",
+        answers: [
+            { answer: "Mars", letter: "A", isCorrect: false },
+            { answer: "Saturn", letter: "B", isCorrect: false },
+            { answer: "Jowisz", letter: "C", isCorrect: true },
+            { answer: "Uran", letter: "D", isCorrect: false }
+        ]
+    },
+    {
+        question: "Która z księżycowych misji była pierwsza i przyniosła ludzi na powierzchnię Księżyca?",
+        answers: [
+            { answer: "Apollo 11", letter: "A", isCorrect: true },
+            { answer: "Apollo 13", letter: "B", isCorrect: false },
+            { answer: "Apollo 17", letter: "C", isCorrect: false },
+            { answer: "Apollo 8", letter: "D", isCorrect: false }
+        ]
+    }
+];
 
 
 export const NavBar = [

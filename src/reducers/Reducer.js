@@ -12,7 +12,7 @@ const quizReducer = (state = appData, action) => {
     case ANSWER_QUESTION:
       const currentQuestion = questions[state.currentIndex];
 
-      const selectedAnswer = currentQuestion.anwsers[action.payload];
+      const selectedAnswer = currentQuestion.answers[action.payload];
 
       const isAnswerCorrect = selectedAnswer.isCorrect;
 

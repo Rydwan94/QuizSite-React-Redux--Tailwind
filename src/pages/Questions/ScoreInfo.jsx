@@ -10,7 +10,7 @@ import checkIcone from "../../assets/icons/checkIcone.png";
 const ScoreInfo = () => {
   const store = useSelector((state) => state.anwsersReducer);
 
-  const { score, correctAnwsers, currentIndex } = store;
+  const { score, correctAnwsers, questions } = store;
 
   const navigate = useNavigate();
 
@@ -21,10 +21,9 @@ const ScoreInfo = () => {
     dispatch({ type: RESET_INDEX });
   };
 
-  console.log(correctAnwsers);
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center max-md:px-10 animate-jump-in">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center max-md:px-10 animate-jump-in max-sm:animate-jump">
       <img src={scoreImg} alt="scoreImg" />
       <h2 className="font-monsterrat text-8xl max-md:text-4xl py-10">
         Result of fantasy Quiz
@@ -38,8 +37,8 @@ const ScoreInfo = () => {
         <div className="flex justify-center items-center  w-9 h-9 bg-[#EDE8E3] rounded-full">
           <img src={checkIcone} alt="checkIcone" />
         </div>
-        <p className="text-2xl font-monsterrat">Correct Predictions</p>
-        <p className="text-2xl font-semibold ">{correctAnwsers}</p>
+        <p className="text-2xl font-monsterrat">Correct</p>
+        <p className="text-2xl font-semibold ">{correctAnwsers} / {questions.length}</p>
       </div>
       <button
         className="font-monsterrat mt-10 w-80 h-20 rounded-2xl bg-[#31CD63] text-white hover:transform hover:scale-110 transition-[transform] "

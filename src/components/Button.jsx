@@ -11,10 +11,10 @@ const Button = ({ index,message, letter }) => {
   return (
     <button
       onClick={handleAnswerClick}
-      className=" relative bg-white text-black text-4xl max-md:text-2xl rounded-md py-2 w-full hover:transform hover:bg-[#31CD63] hover:scale-105 transition-all "
+      className=" relative flex items-center  bg-white text-black text-2xl max-md:text-xl rounded-md py-2 w-full hover:transform focus:bg-[#31CD63] hover:scale-105 transition-all "
     >
-      <span className="font-monsterrat w absolute left-20 text-blue">{letter}</span>
-      <span >{message}</span>
+      <span className="basis-[150px] max-md:basis-[100px] font-monsterrat  text-blue">{letter}</span>
+      <span className="basis-3/4 text-start ">{message}</span>
     </button>
   );
 };

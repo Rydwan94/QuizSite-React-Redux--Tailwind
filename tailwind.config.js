@@ -28,7 +28,7 @@ export default {
         
       },
       backgroundImage: {
-        "homepage" : "url(./assets/images/homepage.png)"
+        "landingPage" : "url(./assets/images/landingPage.png)"
       },
     },
   },
