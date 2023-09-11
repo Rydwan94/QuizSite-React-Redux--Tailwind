@@ -25,12 +25,12 @@ const Navbar = () => {
   ));
 
   return (
-    <header className=" w-full py-3 max-lg:p-3 max-lg:bg-gradient-to-r from-cyan-300 to-blue-500">
+    <header className=" w-full py-4 max-lg:p-3 max-lg:bg-gradient-to-r from-cyan-300 to-blue-500">
       <nav className="flex justify-evenly items-center md:flex max-lg:flex-col max-lg:items-center">
         <Hamburger handleClick={handleClick} active={active} />
         <ul className={`flex max-lg:flex-col items-center text-xl max-lg:overflow-hidden transition-[height] duration-700 ${active? "max-lg:h-40" : "max-lg:h-0"}`}>
-          <section className="max-lg:flex max-lg:justify-between mb-2">
-            <img src={brand} alt="brand" className="max-sm: w-36" />
+          <section className="flex justify-between items-center max-sm:mb-2">
+            <img src={brand} alt="brand" className="shadow-xl rounded-3xl max-sm:w-36"  />
           </section>
           {navList}
           <hr />

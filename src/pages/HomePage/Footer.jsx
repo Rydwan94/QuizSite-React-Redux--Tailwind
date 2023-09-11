@@ -14,7 +14,7 @@ const Footer = () => {
     ))
   return (
     <footer ref={ref} className={`max-container flex justify-between px-4 py-10 ${isInView && "animate-flip-down animate-delay-400"}`}>
-        <img className="max-sm:w-[170px]" src={brand} alt="brand" />
+        <img className="max-sm:w-[170px] shadow-xl rounded-3xl" src={brand} alt="brand" />
         <p className="max-sm:hidden">Copyright © 2023 Rydwan94. All rights reserved.</p>
         <section className="flex justify-end items-start basis-64 max-sm:basis-1/2">
             {iconsList}
