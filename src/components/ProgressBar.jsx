@@ -10,7 +10,7 @@ const ProgressBar = () => {
   return (
     <div className="flex justify-center items-center self-end w-full  bg-white h-20">
       <div className="w-60 h-8  rounded-xl bg-[#EDE8E3] mx-4">
-        <div style={{width: `${progressBarWidth}%`}} className= "bg-black rounded-xl h-full transition-all"></div>
+        <div style={{width: `${progressBarWidth}%`}} className= "bg-[#31CD63] rounded-xl h-full transition-all"></div>
       </div>
       <p>{currentIndex} / {questions.length}</p>
     </div>

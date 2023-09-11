@@ -11,14 +11,14 @@ const quizReducer = (state = appData, action) => {
   switch (action.type) {
     case ANSWER_QUESTION:
       const currentQuestion = questions[state.currentIndex];
-     
+
       const selectedAnswer = currentQuestion.anwsers[action.payload];
-   
+
       const isAnswerCorrect = selectedAnswer.isCorrect;
-      
+
       return {
         ...state,
-        score: isAnswerCorrect ? state.score + 100 : state.score ,
+        score: isAnswerCorrect ? state.score + 100 : state.score,
         correctAnwsers: isAnswerCorrect
           ? state.correctAnwsers + 1
           : state.correctAnwsers,
@@ -29,7 +29,7 @@ const quizReducer = (state = appData, action) => {
         ...state,
         currentIndex: 0,
         score: 0,
-        correctAnwsers: 0
+        correctAnwsers: 0,
       };
 
     default:

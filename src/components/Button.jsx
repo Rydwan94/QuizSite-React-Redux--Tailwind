@@ -11,7 +11,7 @@ const Button = ({ index,message, letter }) => {
   return (
     <button
       onClick={handleAnswerClick}
-      className=" relative bg-white text-black text-4xl max-md:text-2xl rounded-md py-2 w-full hover:transform hover:scale-105 transition-all "
+      className=" relative bg-white text-black text-4xl max-md:text-2xl rounded-md py-2 w-full hover:transform hover:bg-[#31CD63] hover:scale-105 transition-all "
     >
       <span className="font-monsterrat w absolute left-20 text-blue">{letter}</span>
       <span >{message}</span>

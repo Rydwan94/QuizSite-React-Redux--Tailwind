@@ -1,7 +1,7 @@
 
-import footerTweeter from '../assets/icons/footerIcon2.png'
+import footerGithub from '../assets/icons/githubIcone.png'
 import footerLinkedin from '../assets/icons/footerIcon3.png'
-import footerInstagram from '../assets/icons/footerIcon4.png'
+
 
 export const questions = [
     {
@@ -75,4 +75,14 @@ export const infoList = [
 ]
 
 
-export const footerIcons = [footerTweeter, footerLinkedin, footerInstagram ]
+export const footerIcons = [
+    {
+        path: "https://www.linkedin.com/in/%C5%82ukasz-rydwa%C5%84ski-237469173/",
+        img: footerLinkedin
+    },
+    {
+        path: "https://github.com/Rydwan94?tab=repositories",
+        img: footerGithub
+    }
+
+ ]

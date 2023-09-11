@@ -37,7 +37,7 @@ const LearningInfo = () => {
           </h2>
           <div
             className={`lg:flex justify-between items-center max-md:flex max-md:flex-col-reverse max-lg:flex max-lg:flex-col max-lg:items:center ${
-              isInView && "animate-fade-left animate-delay-500 animate-once"
+              isInView && "animate-fade-left animate-delay-700 animate-once"
             }`}
           >
             <div className="mt-40 grid grid-cols-2 gap-5 max-md:grid-cols-1">

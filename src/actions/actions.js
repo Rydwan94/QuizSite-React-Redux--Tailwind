@@ -3,7 +3,7 @@ export const RESET_INDEX = "RESET_INDEX"
 
 
 
-export const answer = (correct) => ({
+export const answer = (correctAnwser) => ({
     type: ANSWER_QUESTION,
-    payload: correct
+    payload: correctAnwser
 })
